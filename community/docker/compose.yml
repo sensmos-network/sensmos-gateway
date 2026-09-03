@@ -1,0 +1,10 @@
+services:
+  sensmos-gw-udp:
+    build:
+      context: ../..
+      dockerfile: community/docker/Dockerfile
+    network_mode: host
+    cap_add: [NET_RAW]
+    restart: unless-stopped
+    volumes:
+      - /etc/sensmos-gw-udp.json:/etc/sensmos-gw-udp.json
