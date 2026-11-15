@@ -9,7 +9,7 @@ pointed straight at a server. There is no local MQTT there, so the
 
 WHY PASSIVE, NOT A TEE
 The tee (`sensmos-gw-tee.py`) sits in the data path: the forwarder must point at it and it
-relays onward. On hardware that earns that is unacceptable — our outage
+relays onward. On hardware that works for the network that is unacceptable — our outage
 would become theirs. This listener only WATCHES the traffic already flowing over loopback.
 It is nobody's target, relays nothing and delays nothing. Killing this process is invisible
 to the gateway.

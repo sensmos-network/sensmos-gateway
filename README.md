@@ -57,7 +57,7 @@ The rest of this page explains each step in detail.
 ## Why passive rather than a relay
 
 The obvious way to tap a packet forwarder is to put something in the middle — point the
-forwarder at us, and forward onwards. We deliberately do not do that. On hardware that earns,
+forwarder at us, and forward onwards. We deliberately do not do that. On hardware that works for the network,
 our outage would become your outage, and that is not a trade we are willing to offer.
 
 The forwarder already sends every frame to each configured server separately, over loopback.
